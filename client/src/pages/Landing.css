@@ -1,0 +1,157 @@
+/* General Styles */
+.landing-main {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(to right, #4b79a1, #283e51);
+  color: #fff;
+}
+/* Video Background */
+.video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50vh;
+  /* Set the height to half of the viewport */
+  object-fit: cover;
+  z-index: -1;
+}
+
+
+.bg-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  /* Dark overlay for contrast */
+}
+
+/* Hero Section - Moved Down & Left */
+.hero-section {
+  position: relative;
+  height: 50vh;
+  /* Half of the page height */
+  display: flex;
+  align-items: center;
+  /* Centers vertically */
+  justify-content: flex-start;
+  /* Aligns content to the left */
+  text-align: left;
+  padding-left: 5%;
+  margin-top: 5rem;
+  /* Moves the section further down */
+  background: linear-gradient(to right, #283e51, #4b79a1);
+}
+
+
+.hero-section h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.hero-section p {
+  font-size: 1.2rem;
+}
+
+.btn-warning {
+  font-size: 1.2rem;
+  padding: 10px 25px;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.btn-warning:hover {
+  transform: translateY(-3px);
+}
+
+/* How It Works Section */
+.accordion-button {
+  font-weight: bold;
+  color: #fff;
+  background: linear-gradient(to right, #007bff, #00c6ff);
+}
+
+.accordion-button:hover {
+  background: linear-gradient(to right, #00c6ff, #007bff);
+}
+
+.accordion-body {
+  font-size: 1rem;
+}
+
+/* Testimonials Section */
+.carousel-item {
+  text-align: center;
+  padding: 2rem;
+}
+
+.carousel-item p {
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  filter: invert(1);
+}
+
+/* FAQ Section */
+.faq-section h2 {
+  font-weight: bold;
+  text-align: center;
+}
+
+.faq-section .accordion-button {
+  background: #f8f9fa;
+  color: #000;
+}
+
+.faq-section .accordion-body {
+  font-size: 1rem;
+}
+
+/* Footer */
+footer {
+  background: #111;
+  padding: 40px 0;
+  color: #fff;
+}
+
+footer h5 {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer ul li {
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+footer ul li:hover {
+  color: #00c6ff;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 1.8rem;
+}
+
+.footer-icons i {
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.footer-icons i:hover {
+  transform: scale(1.1);
+  color: #00c6ff;
+}

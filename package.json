@@ -1,0 +1,16 @@
+{
+  "scripts": {
+    "start": "npm run install-all && concurrently \"npm run server\" \"npm run client\"",
+    "server": "npm start --prefix server",
+    "client": "npm start --prefix client",
+    "install-all": "npm install && npm run client-install && npm run server-install",
+    "client-install": "npm install --prefix client --force",
+    "server-install": "npm install --prefix server"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  },
+  "dependencies": {
+    "svgo": "^3.3.2"
+  }
+}
